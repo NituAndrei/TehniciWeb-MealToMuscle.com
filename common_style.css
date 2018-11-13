@@ -6,15 +6,56 @@ body{
 	background-color:black;
 }
 
+header{
+	position:fixed;
+	width:100%;
+}
+
 .home{
+	float:left;
 	width:150px;
 	background-color:red;
 	text-align:center;
+	font-size:150%;
+	padding:10px;
 }
 
-.homelink{
+.homeLinkWrapper{
+	background-color:black;
+	border:2px;
+	border-color:black;
+	border-style:solid;
+	border-radius:20px;
+}
+
+.homeLink{
 	text-decoration:none;
-	color:black;
+	color:red;
+}
+
+.navBar{
+	list-style-type:none;
+	margin:0px;
+	height:78px;
+	background-color:red;
+}
+
+.navItem{
+	float:left;
+	background-color:gray;
+	width:10%;
+	height:52px;
+	border-top:13px solid black;
+	border-bottom:13px solid black;
+	border-left:10px solid black;
+}
+
+.navItem:last-of-type{
+	border-right:10px solid black;
+}
+
+.main{
+	padding-top:10%;
 }
 
 footer{
