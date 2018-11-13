@@ -11,6 +11,10 @@ header{
 	width:100%;
 }
 
+*{
+	padding:0px;
+}
+
 .home{
 	float:left;
 	width:150px;
@@ -40,18 +44,38 @@ header{
 	background-color:red;
 }
 
+.a1{
+	text-decoration:none;
+	color:black;
+}
+
+
 .navItem{
-	float:left;
+	display:block;
+	text-align:center;
 	background-color:gray;
 	width:10%;
 	height:52px;
 	border-top:13px solid black;
 	border-bottom:13px solid black;
 	border-left:10px solid black;
+	border-right:10px solid black;
+	line-height:3.2;
 }
 
-.navItem:last-of-type{
-	border-right:10px solid black;
+.navBar>.navItem{
+	float:left;
+}
+
+.submenu{
+	list-style-type:none;
+	position:relative;
+}
+
+.submenu>.navItem{
+	width:100%;
+	position:relative;
+	right:10px;
 }
 
 .main{
