@@ -3,7 +3,7 @@ html,body{
 }
 
 body{
-	background-color:black;
+	background-color:white;
 }
 
 header{
@@ -47,6 +47,7 @@ header{
 .a1{
 	text-decoration:none;
 	color:black;
+	display:block;
 }
 
 
@@ -61,6 +62,11 @@ header{
 	border-left:10px solid black;
 	border-right:10px solid black;
 	line-height:3.2;
+	overflow:hidden;
+}
+
+.navBar>.navItem:hover{
+	overflow:visible;
 }
 
 .navBar>.navItem{
@@ -70,6 +76,7 @@ header{
 .submenu{
 	list-style-type:none;
 	position:relative;
+	top:13px;
 }
 
 .submenu>.navItem{
