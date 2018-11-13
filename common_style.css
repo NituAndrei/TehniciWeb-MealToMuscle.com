@@ -1,0 +1,29 @@
+html,body{
+	margin:0;
+}
+
+body{
+	background-color:black;
+}
+
+.home{
+	width:150px;
+	background-color:red;
+	text-align:center;
+}
+
+.homelink{
+	text-decoration:none;
+	color:black;
+}
+
+footer{
+	background-color:black;
+	margin:0;
+	width:100%;
+}
+
+.footerP{
+	color:#A9A9A9;
+	margin:0;
+}
