@@ -30,7 +30,7 @@ h1{
 	line-height:1.7;
 }
 
-.main{
+main{
 	background-color:gray;
 	position:relative;
 	margin:0px;
@@ -75,14 +75,12 @@ table{
 article{
 	margin-top:5%;
 	margin-bottom:0;
+	padding-left:2%;
+	padding-right:2%;
 }
 
 .mainTitle{
 	text-align:center;
-}
-
-.mainP{
-	
 }
 
 footer{
@@ -91,5 +89,11 @@ footer{
 
 .footerP{
 	color:#A9A9A9;
-	margin:0;
+	margin-left:5px;
+}
+
+.toTop{
+	color:#A9A9A9;
+	position:absolute;
+	right:5px;
 }

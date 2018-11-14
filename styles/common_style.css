@@ -38,6 +38,7 @@ header{
 .homeLink{
 	text-decoration:none;
 	color:red;
+	display:block;
 }
 
 .navBar{
@@ -100,5 +101,12 @@ footer{
 
 .footerP{
 	color:#A9A9A9;
-	margin:0;
+	position:absolute;
+	left:5px;
+}
+
+.toTop{
+	color:#A9A9A9;
+	position:absolute;
+	right:5px;
 }
