@@ -3,7 +3,7 @@ html,body{
 }
 
 body{
-	background-color:white;
+	background-color:black;
 }
 
 header{
@@ -13,6 +13,9 @@ header{
 
 *{
 	padding:0px;
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
 }
 
 .home{
@@ -41,7 +44,7 @@ header{
 	list-style-type:none;
 	margin:0px;
 	height:78px;
-	background-color:red;
+	background: linear-gradient(to left, #ff6666 0%, #ff0000 50%);
 }
 
 .a1{
@@ -54,7 +57,7 @@ header{
 .navItem{
 	display:block;
 	text-align:center;
-	background-color:gray;
+	background-color:#A9A9A9;
 	width:10%;
 	height:52px;
 	border-top:13px solid black;
