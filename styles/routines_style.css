@@ -3,9 +3,15 @@ main{
 	padding-bottom:35px;
 }
 
-
-
 .mainContent{
 	padding-left:2%;
 	padding-right:2%;
+}
+
+#articleName{
+	padding-top:20px;
+}
+
+.tables{
+	padding-top:20px;
 }

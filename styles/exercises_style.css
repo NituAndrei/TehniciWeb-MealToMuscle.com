@@ -1,0 +1,117 @@
+main{
+	background-color:gray;
+	padding-bottom:35px;
+}
+
+body{
+	counter-reset:group;
+}
+
+.mainContent{
+	padding-left:2%;
+	padding-right:2%;
+	padding-bottom:50px;
+}
+
+#articleName{
+	padding-top:50px;
+	padding-bottom:10px;
+}
+
+.animContainer{
+	height:150px;
+	width:200px;
+	float:right;
+	position:relative;
+	right:0px;
+}
+
+.arm{
+	height:100px;
+	width:20px;
+	background-color:rgb(255, 204, 153);
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	transform: rotate(-45deg);
+}
+
+.bicep{
+	height:25px;
+	width:50px;
+	background-image:linear-gradient(to bottom,#ff5252, #ffcc99);
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	position:relative;
+	top:-70px;
+	left:-10px;
+	transform: rotate(45deg) scaleX(1.3) scaleY(1.3) ;
+	animation: bicepflex2 3s ease-in-out infinite alternate;
+}
+
+.forearm{
+	height:65px;
+	width:20px;
+	background-color:rgb(255, 204, 153);
+	transform: rotate(45deg);
+	position:relative;
+	top:-100px;
+	left:27px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:10px;
+	transform-origin:bottom;
+	animation: bicepflex 3s ease-in-out infinite alternate;
+}
+
+.weight{
+	height:40px;
+	width:40px;
+	border-radius:40px;
+	background-color:black;
+	position:relative;
+	top:-18px;
+	left:-11px;
+}
+
+@keyframes bicepflex{
+	0%{
+		transform: rotate(30deg);
+	}
+	100%{
+		transform: rotate(65deg);
+	}
+}
+
+@keyframes bicepflex2{
+	100%{
+		transform:scaleX(1) scaleY(1) rotate(45deg);
+	}
+}
+
+.exePhoto{
+	padding-bottom:20px;
+	transition-duration:0.4s;
+	transform-origin:0 0;
+}
+
+.exePhoto:hover{
+	transform:scale(2,2);
+}
+
+.group::before{
+	counter-increment: group;
+	content:"Group " counter(group) ": ";
+}
+
+.group{
+	counter-reset: exercise;
+	padding-top: 15px;
+}
+
+.exercise::before{
+	counter-increment:exercise;
+	content:"Example " counter(group) "." counter(exercise) ": ";
+}
+
+.exercise{
+	padding-top:8px;
+}

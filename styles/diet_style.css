@@ -18,6 +18,7 @@ main{
 
 #oats{
 	float:right;
+	margin-left:10px;
 	padding-top:50px;
 	font-size:16px;
 }
